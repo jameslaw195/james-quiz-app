@@ -1,0 +1,17 @@
+section {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 5px;
+
+  position: relative;
+}
+
+.bookmark_filled {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+.answer_button {
+  background-color: blanchedalmond;
+}
