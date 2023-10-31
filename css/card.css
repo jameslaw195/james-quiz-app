@@ -1,9 +1,18 @@
-main section {
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
   border: 2px solid black;
-  padding: 15px;
+  padding: 50px;
   margin: 5px;
 
   position: relative;
+}
+
+main section h3 {
+  margin: 20px;
 }
 
 .bookmark_filled {
@@ -15,4 +24,19 @@ main section {
 
 .answer_button {
   background-color: blanchedalmond;
+  position: absolute;
+  left: 40%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.tags {
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+}
+.tags span {
+  border: 1px solid black;
+  padding: 5px;
 }
