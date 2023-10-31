@@ -1,5 +1,6 @@
 @import "./header.css";
 @import "./card.css";
+
 * {
   box-sizing: border-box;
 }
