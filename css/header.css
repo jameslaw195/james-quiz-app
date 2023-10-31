@@ -18,8 +18,9 @@ div.headline {
 h1 {
   color: blanchedalmond;
   align-self: center;
-  font-size: 3rem;
+  font-size: 36px;
   padding: 5px;
+  margin: 5px;
 }
 
 div.headline p {
