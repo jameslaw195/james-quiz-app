@@ -1,3 +1,12 @@
 section {
-  border: 5px solid black;
+  border: 2px solid black;
+  display: flex;
+  padding: 10px;
+}
+
+.answer_button {
+  background-color: blanchedalmond;
+}
+
+.answer_button:active {
 }
