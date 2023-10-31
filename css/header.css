@@ -1,6 +1,7 @@
 header {
   display: flex;
   background-color: black;
+  margin-bottom: 15px;
 
   height: 15vh;
 }
@@ -17,7 +18,8 @@ div.headline {
 h1 {
   color: blanchedalmond;
   align-self: center;
-  font-size: 1rem;
+  font-size: 3rem;
+  padding: 5px;
 }
 
 div.headline p {
