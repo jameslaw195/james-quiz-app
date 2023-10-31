@@ -1,12 +1,13 @@
 section {
   border: 2px solid black;
-  padding: 10px;
+  padding: 15px;
   margin: 5px;
 
   position: relative;
 }
 
 .bookmark_filled {
+  height: 1rem;
   position: absolute;
   top: 0;
   right: 10px;
