@@ -9,6 +9,7 @@ section {
   padding: 50px;
   margin: 20px;
   border-radius: 10px;
+  box-shadow: 5px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -36,6 +37,8 @@ main section h3 {
   background-color: blanchedalmond;
   font-size: 18px;
   align-self: center;
+  border: 1px solid black;
+  box-shadow: 5px 5px 10px;
   border-radius: 25px;
   padding: 20px;
   margin: 20px;
