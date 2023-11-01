@@ -3,7 +3,7 @@ header {
   background-color: black;
   margin-bottom: 15px;
 
-  height: 15vh;
+  height: 18vh;
 }
 
 .headerphoto {
@@ -15,15 +15,23 @@ div.headline {
   flex-direction: column;
 }
 
-h1 {
+.headline {
   color: blanchedalmond;
+}
+
+h1 {
   align-self: center;
   font-size: 36px;
   padding: 5px;
   margin: 5px;
 }
 
-div.headline p {
-  color: blanchedalmond;
-  align-self: center;
+.header_quote {
+  display: none;
+}
+
+@media screen and (min-width: 350px) {
+  .header_quote {
+    display: block;
+  }
 }

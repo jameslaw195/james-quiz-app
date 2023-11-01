@@ -39,7 +39,7 @@ main section h3 {
   align-self: center;
   border: 1px solid black;
   box-shadow: 5px 5px 10px;
-  border-radius: 25px;
+  /* border-radius: 25px; */
   padding: 20px;
   margin: 20px;
 }
