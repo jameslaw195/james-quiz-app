@@ -11,7 +11,7 @@ form {
   margin: 10px;
   border-radius: 10px;
   box-shadow: 5px;
-  width: 80vw;
+  width: 95vw;
 }
 
 legend {
@@ -27,4 +27,8 @@ legend {
 
 .submit_button {
   width: 5vw;
+}
+
+.character-counter {
+  margin-left: 70%;
 }

@@ -7,7 +7,7 @@ main {
 section {
   border: 2px solid black;
   padding: 50px;
-  margin: 20px;
+  margin: 20px, 20px, 40px, 20px;
   border-radius: 10px;
   box-shadow: 5px;
   position: relative;
@@ -55,4 +55,8 @@ main section h3 {
   border: 1px solid black;
   padding: 5px;
   border-radius: 10px;
+}
+
+.answers {
+  align-self: center;
 }

@@ -15,31 +15,17 @@ form.addEventListener("submit", (e) => {
 
   const card = document.createElement("section");
   card.innerHTML = `
-     <h2> ${question} </h2>
+     <h2 > ${question} </h2>
      <p> ${answer} </p>
-     
+     <span> ${tags} </span>
     `;
-  console.log(card);
   document.body.append(card);
+  card.classList.add("card");
 });
 
 inputTextQuestion.addEventListener("input", (e) => {
-  e.preventDefault();
-
-  console.dir(e.target.value);
-
   const textInput = e.target.value;
-  const charCount = textInput.length;
+  const charCount = 150 - textInput.length;
 
-  console.log(charCount);
-
-  characterCounter.textContent = charCount;
+  characterCounter.textContent = `You have ${charCount} characters remaining.`;
 });
-
-function countCharacters() {
-  const inputText = inputTextQuestion.value;
-  const charCount = inputText.length;
-  characterCounter = charCount;
-
-  return characterCounter;
-}
