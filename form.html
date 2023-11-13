@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css"
+    <title>Question Form</title>
+  </head>
+  <body>
+    <form data-js="form">
+      <fieldset>
+        <legend>Your question:</legend>
+        <label for="form_question">Your Question</label>
+        <input type="textarea" name="form_question" id="form_question" />
+      </fieldset>
+      <fieldset>
+        <legend>Your answer:</legend>
+        <label for="answer">Your Answer</label>
+        <input type="textarea" name="form_answer" id="form_answer" />
+      </fieldset>
+      <fieldset>
+        <legend>Tags:</legend>
+        <label for="tags">Tags</label>
+        <input type="text" name="tags" id="tags" />
+      </fieldset>
+      <button type="submit" data-js="submit_button">Submit</button>
+    </form>
+  </body>
+</html>
