@@ -3,27 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css"
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/form_script.js" defer></script>
     <title>Question Form</title>
   </head>
+  <header>
+    <img
+      class="headerphoto"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/George_Charles_Beresford_-_Virginia_Woolf_in_1902_-_Restoration.jpg/1024px-George_Charles_Beresford_-_Virginia_Woolf_in_1902_-_Restoration.jpg"
+      alt="Virginia Woolf"
+    />
+  <div class="headline">
+    <h1>Your turn</h1>
+    <h6 class="header_quote">“I can only note that the past is beautiful because one never realises an emotion at the time. It expands later, and thus we don't have complete emotions about the present, only about the past.”</h6>
+  </div>
+  </header>
   <body>
     <form data-js="form">
       <fieldset class="card">
         <legend>Your question:</legend>
         <label for="form_question"></label>
-        <textarea name="form_question" id="form_question" rows="4" cols="7"> </textarea>
+        <textarea
+          name="form_question"
+          id="form_question"
+          rows="4"
+          cols="2"
+          maxlength="150"
+        >
+        </textarea>
       </fieldset>
       <fieldset class="card">
         <legend>Your answer:</legend>
         <label for="form_answer"></label>
-        <textarea rows="4" cols="7" type="textarea" name="form_answer" id="form_answer"></textarea>
+        <textarea
+          rows="4"
+          cols="7"
+          type="textarea"
+          name="form_answer"
+          id="form_answer"
+          maxlength="150"
+        ></textarea>
       </fieldset>
       <fieldset class="card">
         <legend>Tags:</legend>
         <label for="tags"></label>
         <input type="text" name="tags" id="tags" />
       </fieldset>
-      <button type="submit" data-js="submit_button">Submit</button>
+      <button class="submit_btn"type="submit" data-js="submit_button">Submit</button>
     </form>
   </body>
+  <footer>
+    <nav>
+    <div id="home_navbar">  
+        <a href="">
+            <img src="images/home_filled.png" alt="bookmarks">
+        </a>
+    </div>
+    <div id="bookmarks_navbar">  
+        <a href="bookmarks.html">
+          <img src="./images/bookmark_transparent.png" alt="unbookmarked">
+        </a>
+    </div> 
+    <div id="question_form">
+      <a href="form.html">
+      </a>
+    </div>
+    <div id="profile_navbar">
+        <a href=""></a>
+            <img src="./images/profile.png" alt="profile">
+    </a>
+    </div>  
+    </nav>
+  </footer>
 </html>

@@ -1,30 +1,20 @@
 const form = document.querySelector('[data-js="form"]');
-const submitBtn = document.querySelector('data-js="submit_button"]');
+const submitBtn = document.querySelector('[data-js="submit_button"]');
 
-submitBtn.addEventListener("click", (e) => {
+form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const formElements = e.target.elements;
-  const question = e.target.elements.form_question.value;
-  const answer = e.target.elements.form_answer.value;
-  const tags = e.target.elements.tags.value;
+  const question = formElements.form_question.value;
+  const answer = formElements.form_answer.value;
+  const tags = formElements.tags.value;
 
-  const card = document.createElement("card");
-  document.body.append(card);
-
+  const card = document.createElement("section");
   card.innerHTML = `
      <h2> ${question} </h2>
      <p> ${answer} </p>
      
     `;
+  console.log(card);
+  document.body.append(card);
 });
-
-// submitBtn.addEventListener("click", (e)) {
-//     const card = document.createElement("card");
-//     document.body.append(card)
-
-//     card.innerHTML = `
-
-//     `
-
-// }

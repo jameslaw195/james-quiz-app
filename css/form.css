@@ -1,19 +1,30 @@
 form {
   display: flex;
   flex-direction: column;
+  border: 1px solid black;
 }
 
 .card {
   border: 2px solid black;
   background-color: blanchedalmond;
-  padding: 100px;
+  padding: 20px;
   margin: 10px;
   border-radius: 10px;
   box-shadow: 5px;
-  flex-direction: column;
-  width: 8vw;
+  width: 80vw;
 }
 
 legend {
-  background-color: aliceblue;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  font-size: small;
+}
+
+.card textarea {
+  width: 70vw;
+}
+
+.submit_button {
+  width: 5vw;
 }
