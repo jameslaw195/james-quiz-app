@@ -1,14 +1,19 @@
 form {
   display: flex;
+  flex-direction: column;
 }
 
-fieldset {
+.card {
   border: 2px solid black;
-  padding: 50px;
-  margin: 20px;
+  background-color: blanchedalmond;
+  padding: 100px;
+  margin: 10px;
   border-radius: 10px;
   box-shadow: 5px;
-  position: relative;
-  display: flex;
   flex-direction: column;
+  width: 8vw;
+}
+
+legend {
+  background-color: aliceblue;
 }
