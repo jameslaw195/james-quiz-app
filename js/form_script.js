@@ -1,5 +1,9 @@
 const form = document.querySelector('[data-js="form"]');
 const submitBtn = document.querySelector('[data-js="submit_button"]');
+const inputTextQuestion = document.querySelector('[data-js="form_question"]');
+const characterCounter = document.querySelector(
+  '[data-js="character-counter"]'
+);
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -18,3 +22,24 @@ form.addEventListener("submit", (e) => {
   console.log(card);
   document.body.append(card);
 });
+
+inputTextQuestion.addEventListener("input", (e) => {
+  e.preventDefault();
+
+  console.dir(e.target.value);
+
+  const textInput = e.target.value;
+  const charCount = textInput.length;
+
+  console.log(charCount);
+
+  characterCounter.textContent = charCount;
+});
+
+function countCharacters() {
+  const inputText = inputTextQuestion.value;
+  const charCount = inputText.length;
+  characterCounter = charCount;
+
+  return characterCounter;
+}

@@ -29,25 +29,29 @@
           rows="4"
           cols="2"
           maxlength="150"
+          placeholder="Write your question here..."
+          data-js="form_question"
         >
         </textarea>
       </fieldset>
+      <div class="character-counter" data-js="character-counter"></div>
       <fieldset class="card">
         <legend>Your answer:</legend>
         <label for="form_answer"></label>
         <textarea
           rows="4"
-          cols="7"
-          type="textarea"
+          cols="2"
           name="form_answer"
           id="form_answer"
           maxlength="150"
+          placeholder="Write your answer here"
         ></textarea>
       </fieldset>
+      <div class="character-counter"></div>
       <fieldset class="card">
-        <legend>Tags:</legend>
+        <!-- <legend>Tags:</legend> -->
         <label for="tags"></label>
-        <input type="text" name="tags" id="tags" />
+        <input type="text" name="tags" id="tags" placeholder="#tags"/>
       </fieldset>
       <button class="submit_btn"type="submit" data-js="submit_button">Submit</button>
     </form>
