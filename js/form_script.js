@@ -41,7 +41,6 @@ inputTextAnswer.addEventListener("input", (e) => {
   if (charCount <= 150 && charCount >= 0) {
     characterCounterAnswers.textContent = `${charCount} characters remaining`;
   } else {
-    textInput.slice(151);
     characterCounterAnswers.textContent =
       "You have exceeded the character count.";
   }
