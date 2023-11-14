@@ -35,11 +35,13 @@ inputTextQuestion.addEventListener("input", (e) => {
 });
 
 inputTextAnswer.addEventListener("input", (e) => {
-  const charCount = 150 - e.target.value.length;
+  const textInput = e.target.value;
+  const charCount = 150 - textInput.length;
 
   if (charCount <= 150 && charCount >= 0) {
     characterCounterAnswers.textContent = `${charCount} characters remaining`;
   } else {
+    textInput.slice(151);
     characterCounterAnswers.textContent =
       "You have exceeded the character count.";
   }
